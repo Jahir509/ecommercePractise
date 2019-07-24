@@ -1,0 +1,14 @@
+C:\Users\Jahir\source\repos\EcommerceProject\DatabaseContext\bin\Debug\netcoreapp2.1\DatabaseContext.deps.json
+C:\Users\Jahir\source\repos\EcommerceProject\DatabaseContext\bin\Debug\netcoreapp2.1\DatabaseContext.dll
+C:\Users\Jahir\source\repos\EcommerceProject\DatabaseContext\obj\Debug\netcoreapp2.1\DatabaseContext.csprojAssemblyReference.cache
+C:\Users\Jahir\source\repos\EcommerceProject\DatabaseContext\obj\Debug\netcoreapp2.1\DatabaseContext.csproj.CoreCompileInputs.cache
+C:\Users\Jahir\source\repos\EcommerceProject\DatabaseContext\obj\Debug\netcoreapp2.1\DatabaseContext.AssemblyInfoInputs.cache
+C:\Users\Jahir\source\repos\EcommerceProject\DatabaseContext\obj\Debug\netcoreapp2.1\DatabaseContext.AssemblyInfo.cs
+C:\Users\Jahir\source\repos\EcommerceProject\DatabaseContext\bin\Debug\netcoreapp2.1\DatabaseContext.pdb
+C:\Users\Jahir\source\repos\EcommerceProject\DatabaseContext\bin\Debug\netcoreapp2.1\Models.dll
+C:\Users\Jahir\source\repos\EcommerceProject\DatabaseContext\bin\Debug\netcoreapp2.1\Models.pdb
+C:\Users\Jahir\source\repos\EcommerceProject\DatabaseContext\obj\Debug\netcoreapp2.1\DatabaseContext.csproj.CopyComplete
+C:\Users\Jahir\source\repos\EcommerceProject\DatabaseContext\obj\Debug\netcoreapp2.1\DatabaseContext.dll
+C:\Users\Jahir\source\repos\EcommerceProject\DatabaseContext\obj\Debug\netcoreapp2.1\DatabaseContext.pdb
+C:\Users\Jahir\source\repos\EcommerceProject\DatabaseContext\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+C:\Users\Jahir\source\repos\EcommerceProject\DatabaseContext\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Mvc.ViewFeatures.xml

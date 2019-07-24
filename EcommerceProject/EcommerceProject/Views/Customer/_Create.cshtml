@@ -1,0 +1,51 @@
+﻿@model EcommerceProject.ViewModels.ViewModel_Customer
+@{
+    ViewData["Title"] = "Customer";
+    Layout = "_MyLayout";
+}
+<h2 class="h3 mb-4 text-gray-800">@ViewData["Title"]</h2>
+
+<div class="container">
+    <form enctype="multipart/form-data" class="user" method="post">
+        <div class="form-group">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <input type="text" class="form-control form-control-user" name="CustomerName" id="CustomerName" placeholder="CustomerName">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <input type="text" class="form-control form-control-user" name="Address" id="Address" placeholder="Address">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <input type="text" class="form-control form-control-user" name="ContactNo" id="ContactNo" placeholder="ContactNo">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <input type="file" class="custom-file" name="PhotoFile" id="PhotoFile" placeholder="Photo">
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="UserTypeId" class="control-label"></label>
+            <select asp-for="UserTypeId" class="form-control" asp-items="Model.UserTypeList">
+                <option>Select your Category...</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-3 mb-3 mb-sm-0">
+                <input type="submit" value="Save" class="btn btn-primary btn-user btn-block" />
+            </div>
+        </div>
+        <hr>
+        <!---
+        <a href="index.html" class="btn btn-google btn-user btn-block">
+            <i class="fab fa-google fa-fw"></i> Register with Google
+        </a>
+        <a href="index.html" class="btn btn-facebook btn-user btn-block">
+            <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
+        </a>
+            -->
+    </form>
+</div>

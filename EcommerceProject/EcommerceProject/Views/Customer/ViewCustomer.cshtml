@@ -1,0 +1,54 @@
+﻿@model IEnumerable<EcommerceProject.ViewModels.ViewModel_Customer>
+@{
+    ViewData["Title"] = "View Customer";
+    Layout = "_MyLayout";
+}
+<h2 class="h3 mb-4 text-gray-800">@ViewData["Title"]</h2>
+<p>
+    <a asp-action="Create" class="btn btn-primary btn-user btn-block">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                #Sl.
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.ContactNo)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model=> model.UserType.Type)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+    @{
+        int count = 1;
+    }
+    @foreach (var item in Model)
+    {
+
+        <tr>
+            <td>@count</td>
+            <td>@Html.DisplayFor(modelItem => item.CustomerName)</td>
+            <td>@Html.DisplayFor(modelItem => item.Address)</td>
+            <td>@Html.DisplayFor(modelItem => item.ContactNo)</td>
+            <td>@Html.DisplayFor(modelItem => item.UserType.id)</td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {id=item.Id})|
+                @Html.ActionLink("Details", "Details", new {id=item.Id})|
+                @Html.ActionLink("Delete", "Delete", new {/*id=item.Id*/})|
+            </td>
+        </tr>
+        count++;
+    }
+    </tbody>
+</table>

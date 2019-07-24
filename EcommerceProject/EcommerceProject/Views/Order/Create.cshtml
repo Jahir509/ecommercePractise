@@ -1,0 +1,84 @@
+﻿@model EcommerceProject.ViewModels.ViewModel_Order
+
+@{
+    ViewData["Title"] = "Create";
+    // Layout = "_MyLayout";
+
+}
+
+<hr />
+<div class="row">
+    <div class="col-md-7">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="OrderNo" class="control-label"></label>
+                <input asp-for="OrderNo" class="form-control" />
+                <span asp-validation-for="OrderNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrderDate" class="control-label"></label>
+                <input asp-for="OrderDate" class="form-control" />
+                <span asp-validation-for="OrderDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CustomerId" class="control-label"></label>
+                <input asp-for="CustomerId" class="form-control" />
+                <span asp-validation-for="CustomerId" class="text-danger"></span>
+            </div>
+            <div class="row">
+                <h4>Order Details</h4>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="productId" class="control-label">Product</label>
+                        <select id="productId" name="productId" asp-items="@Model.ProducListItems" class="form-control">
+                            <option> Select Product...</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="unitPrice" class="control-label">Unit Price</label>
+                        <input type="number" id="unitPrice" name="unitPrice" class="form-control">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="qty" class="control-label">Qty</label>
+                        <input type="number" id="qty" name="qty" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="discount" class="control-label">Discount %</label>
+                        <input type="number" id="discount" name="discount" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="button" id="addButton" name="addButton" class="btn btn-success" value="Add">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <table class="table table-dark table-bordered table-hover table-responsive">
+                    <thead class="text-center">
+                        <tr>
+                            <th>Product</th>
+                            <th>Qty</th>
+                            <th>Unit Price</th>
+                            <th>Discount</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbOrderDetails"></tbody>
+                </table>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts{
+    <script src="~/Scripts/AppScripts/Order/OrderCreate.js"></script>
+}
